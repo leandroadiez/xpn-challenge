@@ -1,0 +1,15 @@
+// ----------------------------------------------------------------------------------------------------------------------------------
+// ✅ RESULTADO ESPERADO
+// 💡 Escriba los comandos de git para las siguientes acciones:
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+1. Clonar:
+
+2. Crear un branch con el nombre QA-00:
+
+3. Subir los cambios al branch QA-00:
+
+4. Para que sirve el git stash y git switch?
+
+Git stash guardo cambios temporales sin necesidad de commitear
+Git switch para cambiar de branch - alternativa a git checkout

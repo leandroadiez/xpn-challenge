@@ -1,0 +1,25 @@
+// ----------------------------------------------------------------------------------------------------------------------------------
+// ✅ RESULTADO ESPERADO
+// 💡 Escriba los comandos de SQL para las siguientes acciones:
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+1. Escriba el query para sumar todos los salarios de una columna 'salaries' desde una tabla llamada 'employee':
+
+SELECT SUM(salaries) AS total_salaries FROM employee;
+
+2. Cual es la diferencia entre DELETE y TRUNCATE?
+
+TRUNCATE para eliminar todos los registros de una tabla sin rollback
+DELETE para eliminar filas especificas con condiciones WHERE
+
+3. Para que sirve el INNER JOIN?
+
+Combina filas de dos tablas que cumplen una condicion especifica:
+
+SELECT employee.name, department.department_name
+FROM employee
+INNER JOIN department ON employee.department_id = department.department_id;
+
+4. Que es un foreign key?
+
+deparment_id en employee es una FOREIGN KEY que referencia id en department

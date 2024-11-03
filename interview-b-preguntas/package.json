@@ -1,0 +1,21 @@
+{
+  "name": "sdet-coding-interview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ycl-xepelin/sdet-coding-interview.git",
+  "author": "Xepelin",
+  "license": "MIT",
+  "scripts": {
+    "test2": "ts-node ./src/2-test-api.ts",
+    "test4": "ts-node ./src/4-test-logic.ts",
+    "start": "cypress open"
+  },
+  "dependencies": {
+    "axios": "1.5.1",
+    "cypress": "13.3.1",
+    "dotenv": "16.3.1",
+    "expect": "29.7.0",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2"
+  }
+}
