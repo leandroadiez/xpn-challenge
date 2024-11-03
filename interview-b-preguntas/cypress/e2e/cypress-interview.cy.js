@@ -1,12 +1,11 @@
 /// <reference types="cypress" />
 
 describe("Cypress interview", () => {
-  const url = "https://qaplayground.dev/";
-  beforeEach(function(){
-    cy.visit(process.env.API_URL);
+  beforeEach(()=>{
+    cy.visit(process.env.WEB_URL);
   });
   it("Ejercicio 4.1", () => {
-    cy.intercept('GET', "https://jsonplaceholder.typicode.com/posts").as('getPosts');
+    cy.intercept('GET', process.env.API_URL+"/posts").as('getPosts');
     cy.contains("Fetching Data").click();
     cy.wait('@getPosts').its('response.statusCode').should('equal', 200);
     cy.get('.icard').eq(2).invoke('text').then((text)=>{
